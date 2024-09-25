@@ -1,0 +1,107 @@
+.box1{
+    width: 600px;
+    height: 600px;
+    /* background-image: url(../assets/html_coffee_break.png); */
+    /* border: 5px solid rgba(225, 32, 71, 0.899); */
+    /* background-repeat: */
+    /* background-repeat: repeat; by deafalt */
+    /* background-repeat:repeat-x; */
+    /* background-repeat: repeat-y; */
+    /* background-repeat: no-repeat; is best practice */
+
+    /* background-size: */
+    /* background-size: cover; */ 
+    /* Largens */
+    /* background-size: contain; */
+    /* shrinks */
+    /* background-size: 600px 600px; */
+
+    /* background-position: */
+    /* background-position: left bottom; */
+    /* background-position: right top; */
+
+    /* Gradient */
+    /* Linear-gradient */
+    background-image:linear-gradient(red, yellow, black);
+    /* background-image: linear-gradient(yellow, red); */
+    /* background-image: linear-gradient(to right, black, red); */
+    /* background-image: linear-gradient(to left, blue, aqua, green); */
+    /* background-image: linear-gradient(45deg, pink, darkred, black); */
+    /* background-image: linear-gradient(-45deg, red, yellow, white); */
+
+    /* Radial gradient  */
+    /* background-image: radial-gradient(yellow, red, black); */
+
+    /* background-image: radial-gradient(white, green, blue); */   
+}
+.html {
+    border-radius: 100%;
+}
+.nature{
+    width: 400px;
+    border-radius: 100px;
+    /* height: 100px; */
+}
+
+/* There are 4 types of colors  */
+
+/* Ordinary */
+/* RBG (Red, Blue, Green) */
+/* CSS colors */
+/* HEX vaule */
+
+/* Ordinary colors: white, red, yellow ... */
+
+/* RGB */
+/* background-image: rgb(255, 255, 255) is white */
+/* background-image: rgb(0, 0, 0) is black */
+/* background-image: rgb(255, 0, 0) is red */
+/* background-image: rgb(0, 255, 0) is green */
+/* background-image: rgb(0, 0, 255) is blue */
+/* background-image: rgb(255, 255, 0) is yellow */
+
+/* CSS colors: tan, teal, snow ... */
+
+/* HEX */
+/* color: #ffffff - white */
+/* color: #000000 - black */
+/* color: #ff0000 - red */
+/* color: #00ff00 - green */
+/* color: #0000ff - blue */
+
+/* if every letter or number you've chosen the same, you can write only first 3  */
+/* color: #fff - white */
+
+/* UNITS */
+/* Absolute units: px, cm, mm, in, pt, ... */
+/* Relative units: %, em, rem, vw and vh ...   */
+
+/* % */
+.box2{
+
+    width: 50%;
+    height: 50%;
+    
+    /* background-image: linear-gradient (#ff0000, #000,) */
+    background-color: #00fa;
+    /* align-items: center; */
+}
+
+/* EM/REM */
+
+/* For font-size of html element what we write it follows this */
+
+/* 
+html {
+    font-size: 20px = 1 rem = 20px;
+} */
+
+/* EM gets its size from that element it is in it  */
+
+
+/* .rem-box{
+    width: 50rem;
+    height: 25rem;
+    background-image: linear-gradient(red, blue)
+} */
+

@@ -1,0 +1,62 @@
+h1{
+    color:blue
+}
+
+/* Here 
+01 'h1' is selector
+02 'color' is property
+03 'blue' is value */
+
+/* Types of Selector */
+/* There are tag,class, attribute, id and universal */
+/* tag selector */
+h2{
+    color:red; 
+}
+
+/* Class selector */
+.headGreen{
+    color:chartreuse;
+}
+
+/* Attribute selecor */
+/* If we selec the 'input' it infulenes all tags so pick sepesific type of input */
+[type="text"]{
+    background-color:black;
+} 
+
+[type="email"]{
+    background-color:darkblue;
+} 
+
+/* ID selector */
+#headID{
+    color:indigo;
+}
+
+/* Universal selector */
+/* Whole HTML file changes */
+/* 
+*{
+    background-color: dimgrey;
+} */
+
+/* Cascading  */
+/* 01 InlineCSS (but not the best practice) > 02 ID > 03 Class = 03 Attribute > 04 Tag  */
+
+h1{
+    background-color:cadetblue;
+}
+.headClass{
+    background-color: crimson;
+}
+#headID2{
+    background-color: yellow;
+}
+
+/* !important */
+/* It gives more property than others  */
+h1{
+    background-color: sienna !important;
+}
+

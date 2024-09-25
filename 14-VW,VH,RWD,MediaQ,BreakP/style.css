@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box1{
+    background-color: #ff0000;
+    /* width: 50vw;
+    height: 40vw; */
+    /* width: 50vh;
+    height: 40vh; */
+    width: 100vw;
+    height: 100vh;
+}
+
+/* RWD - Responsive web design  */
+
+/* Adaptive web design */
+
+/* Media Query */
+
+@media screen and  (max-width:600px) and (min-width:300px){
+    .box1{
+        background-color: #0f0;
+    }
+    
+}
+@media screen and (min-width: 900px){
+    .box1{
+        background-image: linear-gradient(red, black, yellow);
+    }
+    
+} 
+
+/* Breakpoints */
+
+/* Breakpoint for mobile devices is 320px to 480px */
+/* Breakpoint for tablet devices is 768px to 1024px*/
+/* Breakpoint for laptop devices is 1280px*/
+/* Breakpoints for Desktop devices are 1440px+ */
+
+/* Mobile */
+@media screen and (min-width: 320px) and (max-width: 480px){
+
+    
+}
+
+/* Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px){
+    
+    
+}
+
+/* Tablets + laptops */
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    
+    
+}
+
+/* Laptops */
+@media screen and (min-width: 1025px) and (max-width: 1280px){
+    
+    
+}
+
+/* Desktops */
+@media screen and (min-width: 1281px) and (max-width: 1440px){
+    
+    
+}
+
+/* Large Desktops */
+@media screen and (min-width: 1441px){
+    
+    
+}

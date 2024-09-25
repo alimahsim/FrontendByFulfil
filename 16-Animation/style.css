@@ -1,0 +1,103 @@
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: #00f;
+    position: relative;
+    /* animation: box-mover 5s infinite; */
+    /* animation-name: box-mover; */
+    /* animation-duration: 4s; */
+    /* animation-delay: 2s; */
+    /* animation-iteration-count: 2; */
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: normal; */
+    /* animation-direction: alternate;
+    animation-direction: reverse;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease;
+    animation-timing-function: ease-in;
+    animation-timing-function: ease-in-out;
+    animation-timing-function: linear; */
+    animation: box-mover 4s infinite linear alternate-reverse 2s;
+}
+
+@keyframes box-mover {
+    from{
+        left:0;
+        background-color: #00f;
+        width: 200px;
+    }
+    to{
+        left: 500px;
+        background-color: #0f0;
+        width: 400px;
+    }
+}
+/* 0% and 100% instead of From and to */
+@keyframes box-mover {
+    0%{
+        left:0;
+        background-color: #00f;
+        width: 200px;
+    }
+    100%{
+        left: 500px;
+        background-color: #0f0;
+        width: 400px;
+    }
+    
+}
+
+@keyframes box-mover {
+    0%{
+        left:0;
+        background-color: #00f;
+        width: 200px;
+    }
+    50%{
+        left: 250px;
+        background-color: #0f0;
+        width: 400px;
+    } 
+    100%{
+        left:500px;
+        background-color: #f00;
+        width: 600px;
+    }
+}
+
+@keyframes box-mover {
+    0%{
+        left:0;
+        background-color: #00f;
+        width: 200px;
+    }
+    25%{
+        left: 100px;
+        background-color: #0f0;
+        width: 400px;
+    } 
+    50%{
+        left:200px;
+        background-color: #f00;
+        width: 600px;
+    }
+    75%{
+        left:300px;
+        background-color: #ff0;
+        width: 800px;
+    }
+    100%{
+        left:400px;
+        background-color: #0ff;
+        width: 1000px;
+    }
+}
+
+.box2{
+    width: 300px;
+    height: 300px;
+    background-color: #fff000;
+    position: relative;
+    animation: box-mover 5s ease 1s 2 normal backwards;
+    /* animation-fill-mode: ; */
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Fifth Lesson</title>
+  </head>
+  <body>
+    <!-- FORM ELEMENTS -->
+    <!-- 01 FORM -->
+    <!-- FORM includes all form elements - father of the all form elements -->
+    <form action="#">
+      <!-- Input type TEXT -->
+      <label for="texting"> <mark>Inter your name here:</mark> </label>
+      <!-- Connects with input and has FOR attr.-->
+      <input
+        type="text"
+        placeholder="Name"
+        id="texting"
+        required
+        minlength="3"
+        maxlength="24"
+      />
+      <!--required - requires filling the input-->
+      <!-- Connects with Label by ID -->
+      <br /><br />
+      <!--Input type NUMBER -->
+      <label for="number"> <i> Inter the number that you like:</i></label>
+      <input
+        type="number"
+        id="number"
+        placeholder="Any number from -1000 to 1000"
+        step="10"
+        max="1000"
+        min="-1000"
+      />
+      <br /><br />
+      <!-- Input type TEL -->
+      <label for="tel"><b>Inter your phone number:</b></label>
+      <input
+        type="tel"
+        id="tel"
+        placeholder="+9980000000"
+        value="+998"
+        pattern="[0-9]{11}"
+        maxlength="11"
+      />
+      <br /><br />
+      <!-- Input type PASSWORD -->
+      <label for="pass"><strong>Inter your password:</strong></label>
+      <input type="password" id="pass" placeholder="Password" />
+      <br /><br />
+      <!-- Input type EMAIL -->
+      <label for="email"><em>Inter your email address:</em></label>
+      <input type="email" id="email" />
+      <br /><br />
+      <!-- Input type RADIO -->
+      <p>Are you married?</p>
+      <label for="yes">Yes</label>
+      <input type="radio" id="yes" name="marriage" />
+      <label for="no">No</label>
+      <input type="radio" id="no" name="marriage" />
+      <br /><br />
+      <!-- Input type CHECKBOX -->
+      <p><u>Choose your favorite subject</u></p>
+      <label for="it">IT</label>
+      <input type="checkbox" id="it" />
+      <br />
+      <label for="math">Mathematics</label>
+      <input type="checkbox" id="math" />
+      <br />
+      <label for="physics">Phisics</label>
+      <input type="checkbox" id="physics" />
+      <br />
+      <label for="eng">English</label>
+      <input type="checkbox" id="eng" />
+      <br /><br />
+
+      <!-- Input type FILE -->
+      <label for="file">Upload your avatar photo</label>
+      <input type="file" accept="image/*" />
+      <br /><br />
+
+      <!-- Input type TEXTAREA -->
+      <label for="offer">Inter your suggestion for support</label>
+      <textarea name="" id="offer" cols="30" rows="10"></textarea>
+      <br /><br />
+
+      <!-- SECTION -->
+      <label for="cars">Pick the car that you like best:</label>
+      <select id="cars" name="cars">
+        <!--multiple - shows all options to the client-->
+        <option value="audi">Audi</option>
+        <option value="ford">Ford</option>
+        <option value="toyota">Toyota</option>
+        <option value="kia">Kia</option>
+        <optgroup label="GM">
+          <option value="nexia">Nexia</option>
+          <option value="tico">Tico</option>
+          <option value="damas">Damas</option>
+        </optgroup>
+      </select>
+
+      <!-- BUTTON -->
+      <br /><br />
+      <button type="submit"><del>Submit</del></button>
+      <button type="reset">Clear</button>
+    </form>
+  </body>
+</html>

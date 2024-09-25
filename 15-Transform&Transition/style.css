@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #f0f;
+  /* transform: rotate(45deg); */
+  /* transform: translate(100px, 200px); */
+  /* top and right */
+  /* transform: translate(-100px, -200px); */
+  /* bottom and left  */
+  /* transform: translateX(100px); */
+  /* moves along with X axe */
+  /* transform: translateY(200px); */
+  /* moves along with Y axe */
+  /* transform: scale(0.5); */
+  /* twice smaller */
+  /* transform: scale(2); */
+  /* twice bigger */
+  /* transform: scale(0.5, 3); */
+  /* transform: scaleX(2); */
+  /* transform: scaleY(0.5); */
+  /* transform: skew(45deg); */
+  /* transform: skewX(45deg); */
+  /* transform: skewY(45deg); */
+
+  /* 3D */
+  /* transform: rotate3d(1,1,1, 45deg); */
+  /* transform: rotateX(45deg); */
+  /* transform: rotateY(45deg); */
+  /* transform: rotateZ(45deg); */
+
+  /* transform: translate3d(50px, 100px, 0); */
+  /* transform: translate3d(50px, 100px, 500px); */
+  /* transform: translateX(10px); */
+  /* transform: translateY(20px); */
+  /* transform: translateZ(100px); */
+
+  /* transform: scale3d(0.5, 0.5, 1); */
+
+  /* TRANSITION */
+  /* transition: width 3s, background-color 3s, height 3s; */
+  transition: all 2s;
+  /* transition-timing-function: ease; */
+  /* transition-timing-function: ease-in; */
+  /* transition-timing-function: ease-out; */
+  /* transition-timing-function: ease-in-out; */
+  /* transition-timing-function: linear; */
+  /* transition-timing-function: cubic-bezier(1, 1, 1, 0); */
+
+  /* transition-delay: 3s; */
+}
+
+.box:hover {
+  width: 600px;
+  height: 600px;
+  background-color: #0f0;
+}

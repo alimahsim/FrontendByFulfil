@@ -1,0 +1,95 @@
+html{
+    height: 2000px;
+}
+
+h1 {
+  display: inline;
+}
+/* H1 is by deafalt block element but we've changed it into Inline */
+a {
+  display: block;
+  margin: 20px 0 20px 0;
+  text-transform: uppercase;
+  text-decoration:none;
+  font-weight: 900;
+}
+/* a is by deafalt inline element but we've changed it into block  */
+
+.block {
+  display: inline-block;
+  background-color: #77aabb;
+  padding: 10px;
+  margin: 10px;
+  width: 500px;
+  height: 100px;
+}
+/* Works like inline and block element: Take all commands of block and inline elements */
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: chocolate;
+  /* display: none; */
+  /* opacity: 0.3; */
+  /* text-align: center; */
+}
+/* The element is exist but not visible AND doesn't take any place */
+/* Opacity doesn't show the element but the element is exist and holds its place */
+
+/* Text changing */
+
+p {
+  text-align: center;
+  /* color: red; */
+}
+
+.decoration {
+  text-decoration: line-through;
+  font-weight: 900;
+}
+.transform {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+img {
+  width: 250px;
+  /* height: 100px; */
+  /* float: right; */
+  /* clear:both; */
+  /*clear:both;  Stops the float from right, left and both sides */
+}
+
+img.nature{
+      float: left;
+}
+
+.screenshort {
+  /* text-align: right; */
+  float: right;
+  /* clear:both; */
+}
+
+/* PSEUDO classes */
+.box2{
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    background-color:chartreuse;
+    text-align: center;
+    padding: 50px 0 0 0;
+
+}
+.box2:hover{
+    background-color: #a1187a;
+    color:#fff;
+}
+.box2:active{
+    width: 400px;
+    height: 400px;
+    background-color:#77aabb;
+}
+a:visited {
+    color:green;
+    /* background-color: #111; */
+}

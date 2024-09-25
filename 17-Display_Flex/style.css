@@ -1,0 +1,86 @@
+.container {
+  background-color: #78cf94;
+  display: flex;
+  border-radius: 0.5rem;
+  height: 500px;
+
+  /* flex-direction: row; */
+  /* default */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+
+  /* flex-wrap: nowrap; */
+  /* default */
+  /* flex-wrap: wrap; */
+  /* flex-wrap: wrap-reverse; */
+
+  /* flex-flow: row wrap;    */
+
+  /* justify-content: baseline; */
+  justify-content: center;
+  /* justify-content: flex-end; */
+  /* justify-content: flex-start; */
+  /* justify-content: space-around; */
+  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
+
+  /* align-items: stretch; */
+  /* align-items: start; */
+  /* align-items: flex-start; */
+  align-items: center;
+
+  /* align-content:flex-start; */
+  /* align-content:flex-end; */
+  /* align-content: space-between; */
+  /* align-content: space-around; */
+  /* align-content: center; */
+}
+
+.item {
+  padding: 5rem 1rem;
+  margin: 10px;
+  background-color: #264982;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+
+/* ORDER is for child element  */
+/* Gives orders to the elements */
+
+.item:nth-child(3) {
+  order: -3;
+}
+.item:nth-child(2) {
+  order: -2;
+}
+.item:nth-child(4) {
+  order: -4;
+  background-color: chartreuse;
+}
+
+/* FLEX-GROW is for Child elements */
+/* Child elements are grown by it */
+
+.item:nth-child(2) {
+  flex-grow: 1;
+}
+.item:nth-child(3) {
+  flex-grow: 2;
+}
+.item:nth-child(4) {
+  flex-grow: 3;
+}
+
+/* FLEX-SHIRINK */
+/* Shrinks the child element */
+
+.item:nth-child(2) {
+  flex-shrink: 0;
+}
+.item:nth-child(3) {
+  flex-shrink: 2;
+}
+.item:nth-child(4) {
+  flex-shrink: 3;
+}
