@@ -1,0 +1,10 @@
+$green_color: #0f0;
+$blue_color: #00f;
+
+h1 {
+  background-color: $green_color;
+  color: $blue_color;
+}
+header {
+  display: flex;
+}
