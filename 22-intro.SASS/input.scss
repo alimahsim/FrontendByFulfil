@@ -1,10 +1,40 @@
-$green_color: #0f0;
-$blue_color: #00f;
+// $green_color: #0f0;
+// $blue_color: #00f;
+$red_color: #d21d1d;
 
-h1 {
-  background-color: $green_color;
-  color: $blue_color;
+// h1 {
+//   background-color: $green_color;
+//   color: $blue_color;
+// }
+
+* {
+  margin: 0;
+  padding: 0;
 }
+
 header {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 10rem;
+  //   margin: 0;
+  background-color: #111;
+  color: $red_color;
+  .logo {
+    cursor: pointer;
+  }
+  .navigation ul {
+    display: flex;
+    column-gap: 1rem;
+    list-style: none;
+    text-transform: uppercase;
+    /* text-decoration: none; */
+    li {
+      /* text-decoration: none; */
+      a {
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
 }

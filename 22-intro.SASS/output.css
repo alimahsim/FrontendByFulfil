@@ -1,6 +1,32 @@
-h1 {
-  background-color: #0f0;
-  color: #00f;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 10rem;
+  background-color: #111;
+  color: #d21d1d;
+}
+header .logo {
+  cursor: pointer;
+}
+header .navigation ul {
+  display: flex;
+  column-gap: 1rem;
+  list-style: none;
+  text-transform: uppercase;
+  /* text-decoration: none; */
+}
+header .navigation ul li {
+  /* text-decoration: none; */
+}
+header .navigation ul li a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=output.css.map */
