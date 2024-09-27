@@ -1,11 +1,53 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Gilroy, sans-serif;
+/* General CSS begins */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Gilroy, sans-serif;
 }
 
 @font-face {
-    font-family: Gilroy;
-    src: url(../assets/fonts/Gilroy-Light.otf);
+  font-family: Gilroy;
+  src: url(../assets/fonts/Gilroy-Light.otf);
+}
+.btn {
+  padding: 0.75rem 2.25rem;
+  background-color: #5a98d0;
+  color: #fff;
+  border: 0.2rem solid #5a98d0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 4%;
+  cursor: pointer;
+  box-shadow: 0.3rem 0.3rem 0.75rem #5a98d0;
+}
+.btn:hover {
+  color: #5a98d0;
+  background-color: #fff;
 }
 
+/* Gerenal CSS ends */
+
+/* Navbar begins */
+
+nav {
+  padding: 1.5rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo img{
+    width: 4rem;
+}
+nav .menu {
+  display: flex;
+  list-style: none;
+  column-gap: 0.5rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #5a98d0;
+  font-weight: 600;
+}
+
+/* Navbar ends */
