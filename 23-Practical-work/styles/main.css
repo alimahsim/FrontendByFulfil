@@ -47,36 +47,40 @@ nav .menu {
 }
 nav ul li a {
   text-decoration: none;
-  color: #1F3F68;
+  color: #1f3f68;
   font-weight: 600;
 }
 
 /* Navbar ends */
 
 /* Header begins */
-header{
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   column-gap: 3rem;
   padding: 2rem 4rem 2rem 14rem;
-  background: linear-gradient(0deg, #98C3E8 8.84%, rgba(152, 195, 232, 0) 31.12%);
-
+  background: linear-gradient(
+    0deg,
+    #98c3e8 8.84%,
+    rgba(152, 195, 232, 0) 31.12%
+  );
 }
-header .context{
+
+header .context {
   /* display: flex; */
   /* flex-direction: column; */
   /* row-gap: 2rem; */
 }
 header h1 {
   font-size: 4rem;
-  color: #1F3F68;
+  color: #1f3f68;
   letter-spacing: 4%;
   line-height: 120%;
 }
 header p {
   font-size: 1.4rem;
-  color:#1F3F68;
+  color: #1f3f68;
   line-height: 150%;
   margin: 2rem 0 4.5rem 0;
   opacity: 0.6;
