@@ -1,0 +1,163 @@
+/* General CSS begins */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Gilroy, sans-serif;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url(../assets/fonts/Gilroy-Light.otf);
+}
+.btn {
+  padding: 0.75rem 2.25rem;
+  background-color: #5a98d0;
+  color: #fff;
+  border: 0.2rem solid #5a98d0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 4%;
+  cursor: pointer;
+  box-shadow: 0.3rem 0.3rem 0.75rem #5a98d0;
+}
+.btn:hover {
+  color: #5a98d0;
+  background-color: #fff;
+}
+
+/* Gerenal CSS ends */
+
+/* Navbar begins */
+nav {
+  padding: 1.5rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo img {
+  width: 4rem;
+  cursor: pointer;
+}
+nav .menu {
+  display: flex;
+  list-style: none;
+  column-gap: 1rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #1f3f68;
+  font-weight: 600;
+}
+/* Navbar ends */
+
+/* Header begins */
+header {
+  background-image: url(../assets/images/contact_header_bcgi.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 3.5rem 0 3rem 0;
+}
+header .header_container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
+}
+header .header_container h1 {
+  font-size: 2.5rem;
+}
+header .header_container p {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 75%;
+}
+
+/* Header ends */
+
+/* Main begins */
+main h3 {
+  color: #1f3f68;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+main {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  color: #1f3f68;
+}
+.contact_main {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.contact_main__context {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+.phone_container div {
+  display: flex;
+  column-gap: 1rem;
+}
+.phone_container div img {
+  padding-bottom: 1rem;
+}
+.online_service__container div {
+  display: flex;
+  column-gap: 1rem;
+}
+.online_service__container div img {
+  padding-bottom: 1rem;
+}
+.online_service__container a {
+  text-decoration: none;
+  color: #1f3f68;
+}
+
+.contact_main__form {
+  width: 55%;
+  box-shadow: 5px 10px 50px 0px #1070b133;
+  border-radius: 0.4rem;
+}
+
+.contact_main__form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #1f3f68;
+}
+.contact_main__form form .form_item {
+  width: 90%;
+  padding-left: 1rem;
+  margin-top: 3rem;
+}
+.contact_main__form form input {
+  width: 90%;
+  padding: 1.5rem 0;
+  border: 1px solid #356ead;
+  border-radius: 0.4rem;
+}
+.contact_main__form form .form_item p {
+  padding-bottom: 1rem;
+}
+.contact_main__form form .form_item:last-child textarea {
+  width: 90%;
+  padding: 3rem 0;
+  border: 1px solid #356ead;
+  /* border: 1px solid #356ead; */
+  border-radius: 0.4rem;
+}
+.contact_main__form form .form_item button {
+  margin: 3rem 0;
+  width: 90%;
+}
+
+/* Main ends */
