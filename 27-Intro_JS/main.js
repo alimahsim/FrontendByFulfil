@@ -7,8 +7,8 @@ let name = "Ali"
 
 // let = keyword creates variable, 
 // name = Indentifier (variable name),
-// "Ali" = variable value,
-// = is operator 
+// "Ali" = value,
+// = is operator,
 
 
 // Data types
