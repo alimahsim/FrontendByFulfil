@@ -38,3 +38,20 @@
 // vowelCounter("Web developer"); // 5
 
 // To be continued ...
+const numbers = 121255;
+
+let r = numbers.toString().split("");
+console.log(r);
+console.log(typeof r); // object
+console.log(typeof r[0]); // string
+
+// By a function
+let nums = 445;
+
+function toArray(num) {
+  let r = num.toString().split("").map(Number);
+  return r;
+}
+console.log(toArray(nums)); // [4, 4, 5]
+
+
