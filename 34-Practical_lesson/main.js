@@ -54,4 +54,24 @@ function toArray(num) {
 }
 console.log(toArray(nums)); // [4, 4, 5]
 
+// Divides evenly
 
+let dividesEvenly = (a, b) => (a % b === 0 ? true : false);
+console.log(dividesEvenly(11, 7)); // false
+console.log(dividesEvenly(12, 4)); // true
+
+// Divides by Five
+
+const divieFive = (a) => a % 5 === 0;
+console.log(divieFive(20)); // true
+console.log(divieFive(21)); // false
+
+// String to number and calculater the value
+
+const equation = function (n) {
+  return eval(n);
+};
+console.log(equation("35 + 35")); // 70
+console.log(equation("35 - 35")); // 0
+
+console.log(eval("35/5")); // 7
