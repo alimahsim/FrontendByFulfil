@@ -1,0 +1,11 @@
+button {
+  background-color: #95d4d3;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: 0.5rem solid #95d4d3;
+  font-weight: 900;
+  cursor: pointer;
+}
+#btnJS {
+  color: #2923e2;
+}
