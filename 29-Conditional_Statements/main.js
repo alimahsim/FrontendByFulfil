@@ -1,169 +1,186 @@
-//  Conditional Statements
+// Conditional operators
 
-// && = and => If only one statement is False all of them is False
-// || = or => If only one statement is True, all of them is converted into True, namely opposet of &&
-// != not => If statement is True it converts it into False, if it's just opposit it converts into True
+// AND = * = &&
+// OR = + = ||
+// NOT = !(value)
 
-// false = 0;
-// true = 1;
+console.log(true || false); // true
+console.log(false && true); // false
+console.log(!true); // false
 
-// console.log(1 && 0); // 0
-// console.log(1 || 0); // 1
-// console.log(!true); // false
-// console.log(!false); // true
+// More complex
+console.log((false && "Jone") || 15); // 15
+console.log(false || ("Jone" && []) || !true); // []
 
-// IF
+console.log(false || !true || "" || "Jone" || undefined || null); // "Jone" => stops at TURE
+console.log(false || !true || "" || null || undefined); // undefined => if all are FALSE stops at LAST
 
-// let age = 20;
+console.log(true && "Jone" && 15 && [] && null && undefined && !true); // null => stops at TRUE
+console.log(true && !false && "1" && 10 && [] && {}); // {} => if all correct stops at LAST
 
-// if (age >= 16) {
-//   console.log("You are an adult");
-// }
-// You are an adoult
+console.log(
+  null || (undefined && true) || ("Jone" && []) || (true && "") || !true
+);
 
-// let age2 = 15;
+// Debugging
+console.log(null || undefined); //undefined
+console.log(undefined && true); // undefined
+console.log(undefined || []); // []
+console.log([] || ""); // ""
+console.log("" || !true); // false
 
-// if (age >= 16) {
-//   console.log("You are an adult");
-// }
-// ...
+// Conditional Statements (if else)
 
-// IF / ELSE
+// if
+// when statement is true, and get result
+let age = 22;
 
-// let customerAge = 50;
-// let customerAge = 5;
+if (age >= 16) {
+  console.log("You have got a passport");
+}
 
-// if (customerAge <= 8) {
-//   console.log("Enterence to the park is free for you!");
-// } else {
-//   console.log("You must to pay for entering to the park");
-// }
+// when statement is false, and we don't get the result
+let age2 = 12;
 
-// ELSE IF
+if (age2 >= 16) {
+  console.log("You have got a passport");
+}
 
-// let customerAge = 5;
-// let customerAge = 15;
-// let customerAge = 35;
+// if else
+let age3 = 15;
 
-// if (customerAge <= 8) {
-//   console.log("Enterence to the park is free for you!");
-// } else if (customerAge >= 8 && customerAge <= 16) {
-//   console.log("You must pay $1 for entering to the park");
-// }else if (customerAge ){
+if (age3 >= 16) {
+  // when the statement is false "else" block works
+  console.log("You have got a passport");
+} else {
+  // "else" block don't have the statement = () and code runs in any case
+  console.log("You didn't get the passport");
+}
 
-// }
-//  else {
-//   console.log("You must pay $5 for entering the park ");
-// }
+// "if" "else if" "else"
 
-// SWITCH CASE
+let skill = 0;
+if (skill == 1) {
+  console.log("You are Junior developer!");
+} else if (skill > 1 && skill <= 2) {
+  console.log("You are Middle devoloper!");
+} else if (skill >= 3) {
+  console.log("You are Senior devoloper!");
+} else {
+  console.log("What a hell are you?");
+} // We can continue as many cases as we wont with "else if"
 
-// First let's do it by If statement
+// Switch case
 
-// let weekDay = 6; // Today is Saturday
-// let weekDay = 1; // "Today is Monday"
-// let weekDay = 8; // "There isn't this kind of day in the week days"
+// Before it, solution with "if"
+let weekDay = 10;
 
-// if (weekDay === 1) {
-//   console.log("Today is Monday");
-// } else if (weekDay === 2) {
-//   console.log("Today is Tuesday");
-// } else if (weekDay == 3) {
-//   console.log("Today is Wednesday");
-// } else if (weekDay === 4) {
-//   console.log("Today is Thursday");
-// } else if (weekDay === 5) {
-//   console.log("Today is Friday");
-// } else if (weekDay === 6) {
-//   console.log("Today is Saturday");
-// } else if (weekDay === 7) {
-//   console.log("Today is Sunday");
-// } else {
-//   console.log("There isn't this kind of day in the week days");
-// }
+if (weekDay === 1) {
+  console.log("It is Monday");
+} else if (weekDay === 2) {
+  console.log("It is Tuesday");
+} else if (weekDay === 3) {
+  console.log("It is Wednesday");
+} else if (weekDay === 4) {
+  console.log("It is Thursday");
+} else if (weekDay === 5) {
+  console.log("It is Friday");
+} else if (weekDay === 6) {
+  console.log("It is Saturday");
+} else if (weekDay === 7) {
+  console.log("It is Sunday");
+} else {
+  console.log("No this kind of week day man!");
+}
 
-// By Switch case
+// Now switch case
 
-// let weekDay = 5;
+let weekDay2 = 5;
 
-// switch (weekDay) {
-//   case 1:
-//     console.log("Today is Monday");
-//   case 2:
-//     console.log("Today is Tuesday");
-//   case 3:
-//     console.log("Today is Wednesday");
-//   case 4:
-//     console.log("Today is Thursday");
-//   case 5:
-//     console.log("Today is Friday");
-//   case 6:
-//     console.log("Today is Saturday");
-//   case 7:
-//     console.log("Today is Sunday");
-//   default:
-//     console.log("There isn't this kind of day in the week days");
-// }
+switch (weekDay2) {
+  case 1:
+    console.log("It is Monday");
+  case 2:
+    console.log("It is Tuesday");
+  case 3:
+    console.log("It is Wednesday");
+  case 4:
+    console.log("It is Thursday");
+  case 5:
+    console.log("It is Friday");
+  case 6:
+    console.log("It is Saturday");
+  case 7:
+    console.log("It is Sabday");
+  default:
+    console.log("What a rubbish input man!");
+} // from Friday all worked because there is not "break"
 
-// Result
-//Today is Friday
-// Today is Saturday
-// Today is Sunday
-// There isn't this kind of day in the week days
+// Switch case with "break"
 
-// If we don't put the "break" command, It dosn't stop
+let weekDay3 = 1;
 
-// let weekDay = 5;
+switch (weekDay3) {
+  case 1:
+    console.log("It is Monday");
+    break;
+  case 2:
+    console.log("It is Tuesday");
+    break;
+  case 3:
+    console.log("It is Wednesday");
+    break;
+  case 4:
+    console.log("It is Thursday");
+    break;
+  case 5:
+    console.log("It is Friday");
+    break;
+  case 6:
+    console.log("It is Saturday");
+    break;
+  case 7:
+    console.log("It is Sabday");
+    break;
+  default:
+    console.log("What a rubbish input man!");
+} // When it finds the right answer it stops
+// Switch case checkes numbers with "==="
 
-// switch (weekDay) {
-//   case 1:
-//     console.log("Today is Monday");
-//     break;
-//   case 2:
-//     console.log("Today is Tuesday");
-//     break;
-//   case 3:
-//     console.log("Today is Wednesday");
-//     break;
-//   case 4:
-//     console.log("Today is Thursday");
-//     break;
-//   case 5:
-//     console.log("Today is Friday");
-//     break;
-//   case 6:
-//     console.log("Today is Saturday");
-//     break;
-//   case 7:
-//     console.log("Today is Sunday");
-//     break;
-//   default:
-//     console.log("There isn't this kind of day in the week days");
-// }
+// Ternary Operators => ? and :
 
-// Result = Today is Friday
+let age4 = 55;
 
-// Ternary opators => ? and :
+console.log(age4 >= 16 ? "You have got a passport!" : "You are a kid!");
+// ? => if
+// : => else
 
-// let age = 20;
-// console.log(age >= 16 ? "You have gotten your passport" : "You've not gotten your passport")
+let skill2 = -1;
 
-// Another way to do it
+console.log(
+  skill2 > 0 && skill2 <= 2
+    ? "You are a Junior"
+    : skill2 > 2 && skill2 < 4
+    ? "You are Middle"
+    : skill2 > 4
+    ? "You are Senior"
+    : "What a hell are you?"
+);
 
-// let age = 20; // You are an adult
-// let age = 10; // You are an adult
-// r = age >= 16 ? "You are an adult" : "You are a kid";
+// String
 
-// console.log(r);
+let name = "Ali";
+surname = "Nematov";
 
-// let customerAge = 35;
+// loging by comma = ,
+console.log(name, surname); //Ali Nematov
 
-// let r = customerAge <= 8
-//     ? "Enterence to the park is free for you!"
-//     : customerAge >= 8 && customerAge <= 16
-//     ? "You must pay $1 for entering to the park"
-//     : "You must pay $5 for entering the park ";
+// logging by plus = +
+// Concatination
+console.log(name + surname); //AliNematov
 
-// console.log(r); //You must pay $5 for entering the park 
-
-
+// logging by backtick = ``
+console.log(`${name} ${surname}`); // Ali Nematov and it is the best way to do
+// or
+let result = `${name} ${surname}`;
+console.log(result); // Ali Nematov

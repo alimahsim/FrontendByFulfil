@@ -1,0 +1,96 @@
+body {
+  height: 2000px;
+}
+/* Inheritance */
+
+h1 {
+  background-color: #9f9f9f;
+}
+
+div {
+  color: seagreen;
+  background-color: lightgray;
+}
+
+/* colored all divs green */
+
+/* now let's color p  red */
+/* p {
+    color: red;
+} */
+/* if child element has a color property, it will override the parent's color property. */
+/* so all p elements will be red, not green */
+
+/* Cobminators */
+/* Descendant Selector */
+
+p span {
+  color: blue;
+}
+/* Sign of a descendant selector is a space(" ")between two selectors. */
+
+/* Child Selector */
+div > span {
+  color: red;
+}
+/* Sign of a child selector is a greater than sign(">"). */
+
+/* This rule by Descendant Selector will color all span elements blue that are inside a p element. */
+
+/* div span {
+    color: red;
+} */
+
+/* Adjecant Sibling Selector  */
+
+.adjecant div + p {
+  background-color: cornflowerblue;
+}
+
+/* Sign of an adjecant sibling selector is a plus sign("+"). */
+
+/* General Sibling Selector */
+
+.general div ~ p {
+  background-color: lightcoral;
+}
+
+/* Combined Selectors */
+/* Combined selectors are used to select elements based on multiple conditions.
+and operator is used to combine two selectors. */
+
+.combined li.active {
+  background-color: rgb(230, 230, 103);
+}
+
+/* .active{
+    background-color: rgb(230, 230, 103);
+} */
+
+/* If we just use .active, all li elements with the class active will
+be selected. But if we use .combined li.active, only the li elements */
+
+/* Now we use multiple tags to give them the same style. */
+
+h5,
+li.active,
+h6 {
+  color: darkblue;
+}
+
+/* General Styles */
+.text_dark {
+  color: black;
+}
+.text_light {
+  color: white;
+}
+.text_bold {
+  font-weight: bold;
+}
+.text_italic {
+  font-style: italic;
+}
+.text_underline {
+  text-decoration: underline;
+}

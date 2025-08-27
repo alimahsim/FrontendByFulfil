@@ -1,125 +1,153 @@
-// Funtion
+// FUNCTIONS
 
-// function sayHi() {
-//   console.log("Hi everybody");
-// }
+function greet() {
+  console.log("Hello World!");
+}
 
-// sayHi(); // This is calling the function. if you don't use the it function never works
+// function => keyword
+// greet => function name
+// () => parameters
+// {} => function body
 
-// function = keyword
-// sayHi = name of the function (any name you want which connected to function)
-// () = parameters need to be written
-// {} = function body where main code is written
+greet(); // calling the function
 
-// Argument to parameter
+// Parametering
 
-// function sayHi(name) {
-//   console.log("Hi everybody " + name);
-// }
+function greetToName(name) {
+  console.log("Hello, " + name);
+}
+greetToName(); // Result = Hello undefined
+// greetToName(Alibek); // Result  ReferenceError
+greetToName("Alibek"); //  Giving argument
 
-// sayHi("Alibek");
+let name = "Jhon";
+greetToName(name); // Result = Hello Jhon
 
-// function sum(num1, num2) {
-//   console.log(num1 + num2);
-// }
+function sum(num1, num2) {
+  console.log(num1 + num2);
+}
+sum(20, 30); // Result = 50
 
-// sum(5, 10); // 15
-// sum(4545, 1500); // 6045
+function findPerimeter(width, height) {
+  console.log((width + height) * 2);
+}
+findPerimeter(14, 9); // Result = 46
 
-// function findPeremeter(width, height) {
-//   console.log((width + height) * 2);
-// }
+// OBJECTS
 
-// findPeremeter(5, 6); // (5+6)*2 = 11*2 = 22
+const coder = {
+  name: "Alibek",
+  age: 38,
+  gender: "male",
+  isMarried: true,
+};
+// const => keyword for declaring constants
+// coder => constant name
+// = => assignment operator
+// { } => object literal
+// name: "Alibek" => key-value pair
 
-// Object
+console.log(coder);
 
-// let developer = {
-//   name: "Alibek",
-//   age: 37,
-//   isMarried: true,
-// };
+// Accessing object properties
 
-// Calling value of the Object
+// dot notation
+console.log(coder.name); // Result = Alibek
+console.log(coder.isMarried); // Result = true
 
-// Dot notation
-// console.log(developer)
-// console.log(developer.name) // By using the dot (.) after key
+// bracket notation
+console.log(coder["age"]); // Result = 38
 
-// Second for call the value
-// console.log(developer["age"])
+// Changing properties
 
-// Changing the value of the object
+coder.age = 25;
+console.log(coder.age); // Result = 25
 
-// developer.age = "38";
+coder.name = "Mike";
+console.log(coder.name); // Result = 'Mike'
 
-// console.log(developer.age) // string=38
-// Even if Object is created by CONST, it can change
+console.log(coder); // Result = {name:'Mike', age:25, gender:'male', isMarried: true}
 
-// Adding new key and value outside of Object
+// Nested Object
 
-// developer.gender = "male";
-// console.log(developer.gender)
+const coder2 = {
+  name: "Jhone",
+  surname: "Doe",
+  age: 22,
+  address: {
+    houseNumber: 25,
+    streetName: "Blue Sky",
+    city: "New York",
+    country: "USA",
+  },
+};
 
-// let developer = {
-//   name: "Alibek",
-//   age: 37,
-//   isMarried: true,
-//   address: {
-//     country: "Uzbekistan",
-//     city: "Karshi",
-//   }
-// };
+console.log(coder2.address.city);
+console.log(coder2["address"]["city"]);
 
-// Calling nested objects
-// console.log(developer.address.city)
+const coder3 = {
+  name: "Kemal",
+  surname: "Beyhan",
+  age: 45,
+  address: {
+    houseNumber: 100,
+    streetName: "Kirmizi gul",
+    city: "Istanbul",
+    country: "Turkiye",
+  },
+  greeting: function () {
+    console.log("Berhaba");
+  },
+};
+coder3.greeting();
 
-// Object methods
-// If we use functions in objects is a method
+// ARRAYS
 
-// let developer = {
-//   name: "Alibek",
-//   age: 37,
-//   isMarried: true,
-//   address: {
-//     country: "Uzbekistan",
-//     city: "Karshi",
-//   },
-//   sayHi: function(){
-//     console.log("Hi everybody")
-//   },
-// };
+// 1
+let fruits = ["apple", "cherry", "peanut"];
 
-// developer.sayHi()
+console.log(fruits);
+console.log(typeof fruits);
 
-// Array = massive = list
-// Gathers several data types in it
+// 2
 
-// let fruits = ["apple", "nut", "melon", "watermelon"];
-// console.log(typeof fruits)
+let colors = new Array("red", "blue", "white");
+console.log(colors);
 
-// const fruits = new Array("apple", "nut", "melon", "watermelon")
-// console.log(typeof fruits)
+let emptyArr = [];
+let numArr = [1, 51, -5, 5.2];
+let strArr = ["red", "apple", "shorts"];
+let mixedArr = [
+  true,
+  25,
+  "apple",
+  16n,
+  null,
+  undefined,
+  function () {},
+  [],
+  100,
+];
 
-// let emptyArr = [];
-// let stringArr = ["book", "pen", "pencil"];
-// let numberArr = [5, 6, 10, -1, 4.5];
-// let mixedArr = [[], "book", 10, -1, 4.5, {}, sayHi()];
+console.log(mixedArr);
 
-// Picking the each and every value of Array
-// Index is given each element in array and it starts from 0
+// Accessing array properties
 
-// let stringArr = ["book", "pen", "pencil"];
-// Indexes     [  0   ,   1  ,     2   ]
+// By index and it starts from 0
 
-// console.log(stringArr[1]); // pen
+console.log(mixedArr[0]); // true
+console.log(mixedArr[-1]); // undefined
 
-// Adding element into Array
-// We can add a new element by index
+// Changing properties
 
-// stringArr[3] = "peanut";
-// console.log(stringArr);
+console.log(numArr); // Result = [ 1, 51, -5, 5.2 ]
 
-// Measering the Array
+numArr[0] = 1000;
+console.log(numArr); // Result = [ 1000, 51, -5, 5.2 ]
 
-// console.log(stringArr.length) // 4
+numArr[4] = 555;
+console.log(numArr); //[1000, 51, -5, 5.2, 555];
+
+// Length of an array shows number of elements in it
+
+console.log(numArr.length); // Reseult = 5

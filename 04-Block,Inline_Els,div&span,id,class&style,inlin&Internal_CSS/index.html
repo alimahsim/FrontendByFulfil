@@ -8,5 +8,81 @@
   <body>
     <!-- Types of elements: There are two type of elements-01 Block and 02-Inline -->
     <!-- 01 Block elements -->
+    <!-- Takes whole line accross, not leaves place to other elements -->
+    <h2>Block elements</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod autem
+      voluptatem neque possimus amet tempora corporis aliquam odit harum beatae!
+    </p>
+    <!-- div is the most important block element and it cover block and inline elements -->
+    <!-- For instance: We should paint  h3 and p elements' background color in one go to burlywood  -->
+    <div style="background-color: burlywood">
+      <h3>Hello World!</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente ea a
+        blanditiis dolore nobis voluptatum quae, rem aspernatur quos voluptate
+        similique veniam recusandae quaerat obcaecati impedit! Sit, ullam
+        aliquam? Earum?
+      </p>
+    </div>
+    <!-- Inline elements -->
+    <h2>Inline Elements</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quidem
+      repellat harum deserunt aperiam quas maxime optio quod ullam distinctio?
+    </p>
+    <!-- span is the most imorptant element to cover text  -->
+    <!-- For instance: we should color one single letter  -->
+    <p>
+      Lorem ipsum d<span style="color: blue">o</span>lor sit amet consectetur
+      adipisicing elit. Veritatis quidem repellat harum deserunt aperiam quas
+      maxime optio quod ullam distinctio?
+    </p>
+
+    <!-- Attributes -->
+    <h3>Attributes</h3>
+    <!-- Attributes are divided into 2 groups Global and  Local -->
+    <p>Globals: id, class,style, title, accesskey, draggable and so on</p>
+    <p>Locals: href, src, alt, type, target, colspan, rowspan and so on</p>
+
+    <!-- Global for using in nearly all elements  -->
+    <!-- Locals for using in only specific element -->
+    <p>
+      <b>Id</b> for choosing unique element <br />
+      <q>Class</q> for choosing element <br />
+      <u>Style</u> for styling element
+    </p>
+    <h4>Styling</h4>
+    <p>There are kinds of Styling - Inline, Internal and External</p>
+    <!-- Inline -->
+    <p>
+      In this case we put "Style" attribute into the opening tag of an element
+      and code in key:value pair
+    </p>
+    <!-- For instance: -->
+    <p style="background-color: blueviolet; color: white">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium illum
+      quaerat placeat commodi molestias assumenda. Velit reiciendis eum
+      excepturi cupiditate.
+    </p>
+    <!-- Internal -->
+    <p>
+      For using this we should write "style" tag with an opening and closing
+      tag.
+    </p>
+    <!-- For instance -->
+    <style>
+      .color_white {
+        color: white;
+      }
+      .bgc_color_dark {
+        background-color: black;
+      }
+    </style>
+    <p class="color_white bgc_color_dark">
+      For using this we should write "style" tag with an opening and closing
+      tag.
+    </p>
+    <!-- 07.03.2025  -->
   </body>
 </html>

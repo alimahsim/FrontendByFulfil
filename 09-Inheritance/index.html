@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inheritance</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>
+      Inheritance and Combinators (Descendant, Child, Adjacent sibling, General
+      sibling and Combined Selectors).
+    </h1>
+    <hr />
+    <!-- Inheritance -->
+    <!-- Inheritance is a mechanism in which one element acquires the properties and behavior of its parent element. -->
+    <h2>Inheritance</h2>
+    <div>
+      <h2>News</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, tempora.
+      </p>
+    </div>
+    <hr />
+
+    <!-- Cobminators -->
+    <!-- <p>Cobminators are a connect between selectors. They specify how selectors are related to each other. There are four different combinators in CSS:</p> -->
+
+    <h2>Cobminators</h2>
+
+    <!-- Descendant Selector -->
+    <h4>Descendant Selector</h4>
+    <div>
+      <h2>News</h2>
+      <p>
+        Lorem ipsum dolor sit amet <span>consectetur</span> adipisicing elit.
+        Ea, tempora.
+      </p>
+    </div>
+    <hr />
+
+    <h4>Child Selector</h4>
+    <div>
+      <h2>News</h2>
+      <p>
+        Lorem ipsum dolor sit amet <span>consectetur</span> adipisicing elit.
+        Ea, tempora.
+      </p>
+      <span>Text in SPAN element</span>
+    </div>
+    <h6>
+      If we select it with Descendant Selector, it will select all the span
+      elements inside the div element. But if we select it with Child Selector,
+      it will select only the span element which is the direct child of the div
+      element. <br />
+      <!-- For indtance: -->
+    </h6>
+    <!-- <div>
+      <h2>News</h2>
+      <p>
+        Lorem ipsum dolor sit amet <span>consectetur</span> adipisicing elit.
+        Ea, tempora.
+      </p>
+      <span>Text in SPAN element</span>
+    </div> -->
+    <hr />
+
+    <!-- Adjecant Sibling Selector -->
+
+    <!-- Adjecant sibling selector selects the element that is immediately preceded by the former element. -->
+
+    <h4>Adjecant Sibling Selector</h4>
+    <div class="adjecant">
+      <h2>News</h2>
+      <p>
+        Lorem ipsum dolor sit amet <span>consectetur</span> adipisicing elit.
+        Ea, tempora.
+      </p>
+      <span>Text in SPAN element</span>
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur.Ps in DIV-1</p>
+        <p>Lorem ipsum dolor sit amet consectetur.Ps in DIV-2</p>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ps-1</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ps-2</p>
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur.DIV-3</p>
+        <p>Lorem ipsum dolor sit amet consectetur.DIV-4</p>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ps-3</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ps-4</p>
+    </div>
+    <hr />
+    <!-- General Sibling Selector -->
+    <!-- General sibling selector selects all the elements that are siblings of a specified element. -->
+    <h4>General Sibling Selector</h4>
+    <div class="general">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+      <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      <h4>Heading 4</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+    <hr />
+
+    <!-- Combined Selector -->
+    <!-- Combined selector is a combination of two or more selectors. -->
+
+    <h2>Combined Selector</h2>
+    <div class="combined">
+      <h5 class="active">See our navbar menu</h5>
+      <ul>
+        <li>Home</li>
+        <li class="active">About</li>
+        <li>Contacts</li>
+        <li>Login</li>
+      </ul>
+      <h6>Heading 6</h6>
+    </div>
+    <hr />
+    <!-- General Styles  -->
+    <!-- General Styles are applied to all the elements in the document. -->
+
+    <h4>General Styles</h4>
+    <div class="general_style">
+      <div>
+        <p></p>
+      </div>
+      <div>
+        <p class="text_underline">
+          Lorem ipsum dolor sit, amet consectetur adipisicing.
+        </p>
+        <p class="text_italic">
+          Lorem ipsum dolor sit, amet consectetur adipisicing.
+        </p>
+        <p class="text_bold">
+          Lorem ipsum dolor sit, amet consectetur adipisicing.
+        </p>
+      </div>
+      <p class="text_bold text_underline text_italic">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit
+        dignissimos ex &lt;exercitationem&gt; at facilis aspernatur
+        &quot;magni&quot; repellat &amp; ad soluta &nbsp;cum.
+      </p>
+    </div>
+  </body>
+</html>

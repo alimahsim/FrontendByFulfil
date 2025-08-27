@@ -1,14 +1,15 @@
-h1{
+/* h1{
     color:blue
-}
+} */
 
 /* Here 
-01 'h1' is selector
-02 'color' is property
-03 'blue' is value */
+01 'h1' is selector (tanlovchi)
+02 'color' is property (xossa)
+03 'blue' is value (qiymat)*/
 
 /* Types of Selector */
 /* There are tag,class, attribute, id and universal */
+
 /* tag selector */
 h2{
     color:red; 
@@ -20,7 +21,7 @@ h2{
 }
 
 /* Attribute selecor */
-/* If we selec the 'input' it infulenes all tags so pick sepesific type of input */
+/* If we select the 'input' it infulenes all tags so pick sepesific type of input */
 [type="text"]{
     background-color:black;
 } 
@@ -43,20 +44,29 @@ h2{
 
 /* Cascading  */
 /* 01 InlineCSS (but not the best practice) > 02 ID > 03 Class = 03 Attribute > 04 Tag  */
-
+/* 
 h1{
     background-color:cadetblue;
-}
+} */
 .headClass{
     background-color: crimson;
 }
 #headID2{
     background-color: yellow;
 }
+/* h1{
+    background-color: #00FF44;
+} */
+
+/* Priority: Inline CSS => ID => Class = Attribute => tag */
 
 /* !important */
+
 /* It gives more property than others  */
-h1{
+
+/* h1{
     background-color: sienna !important;
-}
+} */
+
+/* 15.03.2025 revised  */
 

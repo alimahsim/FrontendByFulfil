@@ -65,6 +65,6 @@ btn.addEventListener("click", () => console.log("This is CLICK"));
 
 document.body.addEventlistener("keydown", ()=> console.log("Keydown worked"));
 
-// They work in order 
+// They work orderly 
 
 
