@@ -134,3 +134,28 @@ function changeNumIntoWords(arr) {
 }
 
 console.log(changeNumIntoWords(text)); // Five headed dragon
+
+
+// let counter = 0;
+
+// while (counter < 4) {
+//   console.log("Message");
+//   counter = counter + 1;
+// }
+
+// let counter2 = 0;
+// while (counter2 < 5) {
+//   console.log("Message" + counter2);
+//   counter2 = counter2 + 1;
+// }
+
+let counter3 = 5;
+
+while (counter3 < 10) {
+  console.log("Message" + counter3);
+  counter3 = counter3 + 1;
+}
+
+let items = 5;
+let isCartEmpty = items > 0;
+alert(isCartEmpty);

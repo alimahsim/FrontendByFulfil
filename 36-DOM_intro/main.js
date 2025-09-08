@@ -1,88 +1,86 @@
-// DOM
+console.log("DOM");
 
-// console.log("Hello DOM!"); // Well it's working
+// Window
+// console.log(window);
 
-// Now let's get into work
+// Document
+// console.log(document);
 
-// console.log(window); // Global object
-// console.log(document) // Main object
-
-// Selecting Methods
-// They selects elements of HTML from JS
-
-// getElementById. takes only one element
+// Selecting HTML elements into JS
+// getElementById()
 
 let title = document.getElementById("title");
-console.log(title);
+console.log(title); // <h1 id="title">DOM Introduction</h1>;
 
-// let menu = document.getElementById("menu");
-// getElementsByClassName // returns an array
-// let items = menu.getElementsByClassName("item");
-// getElementsByTagName // returns an array
-// let nav = document.getElementsByTagName("nav");
+let menu = document.getElementById("menu");
+console.log(menu); //<ul id="menu"></ul>
 
-// console.log(menu, items, nav);
+// getElementByTagName
+let nav = document.getElementsByTagName("nav");
+console.log(nav); // HTMLCollection [nav]
 
-// querySelector // returns only the first and one element
+// getElementsByClassName()
+let items = document.getElementsByClassName("item");
+console.log(items); // HTMLCollection(3) [li.item, li.item, li.item]
 
-// let itemHighlighted = document.querySelector(".item.highlight");
-// console.log(itemHighlighted);
+// CSS Selectors
+// querySelector(.)
+let liHighlighted = document.querySelector(".item.highlight");
+console.log(liHighlighted); //<li class="item highlight">JS</li>
 
-// querySelectorAll // returns all elements as an array and it forEach loop which is tremendously useful
+// querySelectorAll(.)
+let liHighlightedAll = document.querySelectorAll(".item.highlight");
+console.log(liHighlightedAll);
 
-// let allHighlightedItems = document.querySelectorAll(".item.highlight");
-// console.log(allHighlightedItems);
+// ====================================================
 
-// 2) Now changing selected HTML elements by JS
+// Changing HTML elements
 
-// innerHTML
+console.log(title.innerHTML);
+console.log(title.innerText);
 
-// console.log(title.innerHTML); //Show with tags
-// console.log(title.innerText); // Map for a Front-end dev // only texts
+title.innerHTML = "DOM INTRO BY JS";
+/* <h1 id="title">DOM Introduction</h1> */ // changed
 
-// title.innerHTML = " List of languages ";
-// title.innerText = " List of languages ";
+title.innerText = "DOM intro by InnerText";
 
-//3) Creating Elements in HTML via JS
+// Creating new HTML elements via JS
 
-// let u = document.createElement("u");
-// console.log(u);
+// appendChild
 
-// u.innerText = "Underlined text";
-// console.log(u);
+let liJS = document.createElement("li");
+// console.log(h1);
+liJS.innerText = "C# by JS";
+// console.log(h1);
 
-// Adding created elements into HTML
+menu.appendChild(liJS);
 
-// appendChild(var)
-// let li = document.getElementById("liByJS");
-// li.appendChild(u)
+// append
 
-// append(var, "any text")
-// li.append(u, " Extra words");
+menu.append("as", "many", "as", "messages");
 
-// let header = document.getElementsByTagName("h1")[0];
-// console.log(header);
-// header.remove();
-// li.remove();
+// Removing elements
 
-// Using attributes - getting and setting them
+// remove
+// title.remove()
+// liJS.remove()
 
-// Getting attributes
-let input = document.getElementsByTagName("input")[0];
-// console.log(input);
+let inputJs = document.getElementsByTagName("input");
+console.log(inputJs); // returns an array
 
-let inputByqs = document.querySelector("input");
-// console.log(inputByqs);
+let firInputJs = document.getElementsByTagName("input")[0];
+console.log(firInputJs); // so get 1 one
 
-console.log(inputByqs.getAttribute("placeholder"));
+let secInputJS = document.getElementsByTagName("input")[1];
+console.log(secInputJS); // second input
 
-// Setting attribute
-// inputByqs.setAttribute("value", "Nematov");
-// console.log(inputByqs.getAttribute("value"));
+// getAttribute
 
-// RemoveAttribute 
-inputByqs.removeAttribute("value")
-title.removeAttribute("id");
+console.log(firInputJs.getAttribute("placeholder")); // Inter your name
+console.log(secInputJS.getAttribute("value")); // press
 
+// setAttribute
+secInputJS.setAttribute("id", "name"); // <input type="button" value="press" id="name">
 
-
+// removeAttribute
+secInputJS.removeAttribute("id"); // <input type="button" value="press">
