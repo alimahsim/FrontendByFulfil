@@ -1,70 +1,57 @@
-// Info: JS => Vanilla JS => Pure JS
-
 // EVENTS
 
-console.log("Hi it's JS");
-
-// Click event
+// onclick
 // 1
-const clickHandler = () => {
-  alert("ClickHTML clicked");
-};
-
-// 2
-function clickHandler2() {
-  alert("ClickJS clicked");
+function sayHi() {
+  alert("Hi");
 }
 
-let btn = document.getElementById("btnJS"); // by id
-console.log(btn);
+let btnJS = document.querySelector("#btn2");
+console.log(btnJS);
+// 2
+btnJS.onclick = sayHi;
 
-// let qbtn = document.querySelector("#btnJS"); // by querySelector
-// console.log(btn);
+// addEventListener
+btnJS.addEventListener("click", sayHi);
 
-// 2.1
-// btn.addEventListener("click", clickHandler2);
+// onload
 
-// 2.2
-// btn.addEventListener("click", () => alert("ClickJS clicked"));
+// document.body.onload = () => {
+//   console.log("Hello");
+// };
 
-// 3
-// btn.onclick = clickHandler2; // Given HTML onclick att. ecualed to ClickHandler2 function
+// Mouse Events
 
-// Load events
+//  mousedown
+// clicked and holded
 
-// DOMcontentLoaded => When HTML uploaded then it works
-// load => after DOMcontentLoaded it works
-// unload => After finised works it works
+// mouseup
+// clicked, holded and released
 
-// Mouse events
+// click
+// 1. mousedown + 2.mouseup = click
 
-// mousedown // it works when left side of mouse clicked and hold
+let btn3 = document.getElementsByTagName("button")[2];
+console.log(btn3);
 
-// mousesup // it works when clicked button released
+btn3.addEventListener("mousedown", () => {
+  console.log("Mousdown");
+});
+btn3.addEventListener("mouseup", () => {
+  console.log("Mouseup");
+});
+btn3.addEventListener("click", () => {
+  console.log("Click");
+});
 
-// click // it works when the first two (mousedown and mouseup) finished they work
+// mouseenter
+// works like CSS hover
 
-btn.addEventListener("mousedown", () => console.log("This is mouseDOWN"));
-btn.addEventListener("mouseup", () => console.log("This is mouseUP"));
-btn.addEventListener("click", () => console.log("This is CLICK"));
-// They work in order
+// mouseleave
+// opppsite of mouseenter
 
+// Keyboard Events
 
-// mousenter // it works when mouse hovers
-
-// mouseleave // it works when mouse hover leaves
-
-
-// Keyword events // 
-
-// keydown // it works when keyword pressed 
-
-// keypress // it works when symbol keys pressed 
-
-// keyup // it works when released keyword buttons 
-
-document.body.addEventlistener("keydown", ()=> console.log("Keydown worked"));
-
-// They work orderly 
-
-
+// keydown
+// keypress
+// keyup
