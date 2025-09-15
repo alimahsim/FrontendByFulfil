@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="todo">
+        <h1>TO DO LIST</h1>
+        <div class="inputAdd">
+          <label for="header"></label>
+          <input type="text" id="header" placeholder="Add list" />
+          <button class="adder" onclick="addToDo()">ADD</button>
+        </div>
+        <div class="lists"></div>
+        <h3 class="insOfDelAll">You haven't added Todos yet!</h3>
+        <button class="delAll" onclick="delAllToDo()">DELETE ALL</button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
