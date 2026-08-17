@@ -1,88 +1,152 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Fourth Lesson</title>
+    <title>Block and Inline Elements</title>
   </head>
   <body>
-    <!-- Types of elements: There are two type of elements-01 Block and 02-Inline -->
-    <!-- 01 Block elements -->
-    <!-- Takes whole line accross, not leaves place to other elements -->
     <h2>Block elements</h2>
+    <h3>Hello world!</h3>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod autem
-      voluptatem neque possimus amet tempora corporis aliquam odit harum beatae!
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+      neque quia optio in velit cupiditate illo earum saepe rerum beatae?
     </p>
-    <!-- div is the most important block element and it cover block and inline elements -->
-    <!-- For instance: We should paint  h3 and p elements' background color in one go to burlywood  -->
-    <div style="background-color: burlywood">
-      <h3>Hello World!</h3>
+    <h4>All semantic tags</h4>
+    <code>
+      header <br />
+      nav <br />
+      main <br />
+      section <br />
+      article <br />
+      aside <br />
+      footer <br />
+    </code>
+    <h4>All header tags</h4>
+    <code> h1 h2 h3 h4 h5 h6 <br /> </code>
+    <code>
+      <h4>And other tags</h4>
+      div <br />
+      p <br />
+      ul <br />
+      ol <br />
+      li <br />
+    </code>
+    <hr />
+    <h2>Inline Elements</h2>
+    <a href="https://google.com">Google</a>
+    <a href="https://youtube.com">Youtube</a> <br />
+    <h3>All text formatting tags:</h3>
+    <code>
+      strong <br />
+      b <br />
+      em <br />
+      i <br />
+      mark <br />
+      del <br />
+      u <br />
+      q <br />
+      sup <br />
+      sub <br />
+    </code>
+    <h4>And others:</h4>
+    <code>
+      a <br />
+      br <br />
+      span <br />
+      img <br />
+      button <br />
+      select <br />
+      textarea <br />
+      imput <br />
+      label <br />
+    </code>
+    <hr />
+    <h5>DIV from Block elements</h5>
+    <p>DIV used for grouping Block and Inline contents</p>
+    <h3><mark>This is the Headers</mark></h3>
+    <p>
+      <mark
+        >This is a paragraph. with lorem 50 words Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Qui ipsam sit harum excepturi nesciunt,
+        voluptatum adipisci consequuntur alias obcaecati tempore laborum. Ipsum
+        illum dicta voluptate cupiditate dolor, ab architecto assumenda repellat
+        voluptates fuga ut quod mollitia laudantium? Nesciunt id ea natus fuga
+        porro earum nostrum amet officiis. Maxime, molestiae odit!</mark
+      >
+    </p>
+    <p>If wrapped the contents above with DIV</p>
+    <div style="background: #f5cccc">
+      <h3>This is the Headers</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente ea a
-        blanditiis dolore nobis voluptatum quae, rem aspernatur quos voluptate
-        similique veniam recusandae quaerat obcaecati impedit! Sit, ullam
-        aliquam? Earum?
+        This is a paragraph. with lorem 50 words Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Qui ipsam sit harum excepturi nesciunt,
+        voluptatum adipisci consequuntur alias obcaecati tempore laborum. Ipsum
+        illum dicta voluptate cupiditate dolor, ab architecto assumenda repellat
+        voluptates fuga ut quod mollitia laudantium? Nesciunt id ea natus fuga
+        porro earum nostrum amet officiis. Maxime, molestiae odit!
       </p>
     </div>
-    <!-- Inline elements -->
-    <h2>Inline Elements</h2>
+    <h5>SPAN from Inline elements</h5>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quidem
-      repellat harum deserunt aperiam quas maxime optio quod ullam distinctio?
+      SPAN used for
+      <span style="background: #f5cccc">I am spanned text</span> grouping inline
+      content
     </p>
-    <!-- span is the most imorptant element to cover text  -->
-    <!-- For instance: we should color one single letter  -->
-    <p>
-      Lorem ipsum d<span style="color: blue">o</span>lor sit amet consectetur
-      adipisicing elit. Veritatis quidem repellat harum deserunt aperiam quas
-      maxime optio quod ullam distinctio?
-    </p>
+    <hr />
+    <h4>Attributes</h4>
+    <h5>Class</h5>
+    <p>Class attributes used for styling and selecting elements</p>
+    <h6 class="header6">Header 6</h6>
 
-    <!-- Attributes -->
-    <h3>Attributes</h3>
-    <!-- Attributes are divided into 2 groups Global and  Local -->
-    <p>Globals: id, class,style, title, accesskey, draggable and so on</p>
-    <p>Locals: href, src, alt, type, target, colspan, rowspan and so on</p>
-
-    <!-- Global for using in nearly all elements  -->
-    <!-- Locals for using in only specific element -->
+    <h5>ID</h5>
+    <p>ID attributes used to uniquely identify elements on the page</p>
+    <a href="#ided_text">press here to see IDed text</a>
+    <p id="ided_text" style="margin-top: 200px">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum magni eius
+      rem quaerat cumque omnis dicta, maiores recusandae facilis, deleniti
+      accusamus natus aut nostrum repudiandae porro, libero nihil assumenda
+      fugiat facere ex error eveniet cupiditate? Nesciunt architecto laudantium
+      aperiam laborum in sapiente aliquam exercitationem a repellat modi aliquid
+      expedita quas molestiae magni autem eos, id, deserunt maiores.
+      Perspiciatis maxime error itaque mollitia accusantium culpa corporis
+      doloremque exercitationem incidunt praesentium deserunt non sit labore
+      expedita, iste aliquam inventore vero ullam nobis totam eaque numquam.
+      Ducimus minima asperiores dolore assumenda quos quasi, natus ipsa
+      voluptate nulla nobis culpa excepturi ea deserunt quas.
+    </p>
+    <h1 id="header1">Header selected by ID</h1>
+    <hr />
+    <h2>Using CSS</h2>
+    <p>There are 3 types of CSS:</p>
+    <ol>
+      <li>Inline CSS</li>
+      <li>Internal CSS</li>
+      <li>External CSS</li>
+    </ol>
+    <h5>Inline CSS</h5>
     <p>
-      <b>Id</b> for choosing unique element <br />
-      <q>Class</q> for choosing element <br />
-      <u>Style</u> for styling element
+      We use the style attribute directly on HTML elements to apply CSS styles.
     </p>
-    <h4>Styling</h4>
-    <p>There are kinds of Styling - Inline, Internal and External</p>
-    <!-- Inline -->
-    <p>
-      In this case we put "Style" attribute into the opening tag of an element
-      and code in key:value pair
+    <p style="color: blue; font-size: 16px">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+      possimus, enim eaque quidem placeat illo repellendus ipsa totam? Atque,
+      aut!
     </p>
-    <!-- For instance: -->
-    <p style="background-color: blueviolet; color: white">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium illum
-      quaerat placeat commodi molestias assumenda. Velit reiciendis eum
-      excepturi cupiditate.
+    <h5>Internal CSS</h5>
+    <p class="internal-css">
+      We use style tags in the head section to define CSS rules for the entire
+      page.
     </p>
-    <!-- Internal -->
-    <p>
-      For using this we should write "style" tag with an opening and closing
-      tag.
-    </p>
-    <!-- For instance -->
     <style>
-      .color_white {
-        color: white;
-      }
-      .bgc_color_dark {
-        background-color: black;
+      .internal-css {
+        color: green;
+        font-size: 18px;
       }
     </style>
-    <p class="color_white bgc_color_dark">
-      For using this we should write "style" tag with an opening and closing
-      tag.
+    <h5>External CSS</h5>
+    <p>
+      We link to an external CSS file using the link tag in the head section.
     </p>
-    <!-- 07.03.2025  -->
   </body>
 </html>

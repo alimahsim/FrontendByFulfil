@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,45 +6,98 @@
     <title>The Third Lesson</title>
   </head>
   <body>
-    <h1>Links, Lists & Tables</h1>
-    <h3>Links</h3>
-    <!-- 01 Links (a, img tags) -->
-    <!-- 1.1 A tag stands for ANCHOR; to create a link to get another sourse -->
-    <!-- It can create links in two different way: Relative - takes information from your own device and Ansolute (globally) - takes information from the Internet. -->
-    <a href="https://www.google.com" , target="_blank">Google</a>
-    <!-- TARGET attribute has _self(default),_blank(new window)_parent and _top properties -->
-    <br />
-    <hr />
-    <!-- 1.2 IMG stands for IMAGE; to uploading pictures into the webpage -->
+    <h1>Links, Lists and Tables</h1>
+    <h4>1 Links</h4>
+    <h5>Absolute URLS</h5>
+    <a href="https://www.google.com">GOOGLE</a> <br />
+    <a href="https://www.youtube.com">YOUTUBE</a>
+    <h5>Relative URLS</h5>
+    <a href="../02-El&Att,Head&P/index.html">Lesson 2</a> <br />
+    <a href="../l2homework.html">Lesson 2 Homework</a> <br />
+    <a href="l3homework.html">Lesson 3 Homework</a>
+
+    <h6>Target</h6>
+    <p>There are 4 types of attributes</p>
+    <p>_self => default</p>
+    <p>_blank => new window opens</p>
+    <a href="l3homework.html" target="_blank">Lesson 3 Homework</a>
+    <p>_parent</p>
+    <p>_top</p>
+    <h6>Download</h6>
+    <a href="l3homework.html" download>Lesson 3 Homework</a><br />
+    <a href="tel: +998993540040">993540040</a> <br />
+    <a href="mailto: alimahsim@gmail.com">alimahsim@gmail.com</a>
+    <h6>Img</h6>
+    <p>Absolute URLs</p>
     <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxEiaCirwOhjyuZ5a3g8rDqTeMz42a6n4BLA&s"
-      alt="Coder's photo"
+      src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/1200/external-html-5-is-a-software-solution-stack-that-defines-the-properties-and-behaviors-of-web-page-logo-color-tal-revivo.jpg"
+      width="500"
+      alt="HTML5 logo"
     />
-    <!-- IMG has 2 src and alt compolsory attributes and width,height and title optional attributes -->
+    <br />
+    <p>Relative URLs</p>
+    <img src="../assets/nature.jpg" width="500" alt="Nature" title="Nature" />
+    <p>
+      IMG tag has many attributes, but the most important ones are
+      SRC,ALT,WIDTH, HEIGHT, and TITLE.
+    </p>
     <hr />
-    <h3>Lists</h3>
-    <!-- 02 Lists -->
-    <!-- There are two types of lists: Ordered list (ol) & Unordered list(ul) -->
-    <!-- 2.1 Ordered List  - OL -->
-    <ol type="A">
-      <!-- With 'type'atribute can convert the number into letters -->
-      <li>Pen</li>
-      <!-- LI stands for LIST ITEM -->
-      <li>Pencil</li>
-      <li>Ereaser</li>
-      <li>Sharpener</li>
+    <h4>2 Lists</h4>
+    <h5>Ordered List</h5>
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
     </ol>
-    <hr />
-    <!-- 2.2 Unordered List - UL -->
+    <p>Ordered list attributes: 1. TYPE</p>
+    <ol type="A">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ol>
+    <ol type="a">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ol>
+    <ol type="I">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ol>
+    <ol type="i">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ol>
+    <ol type="-1">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ol>
+    <h5>Unordered list</h5>
     <ul>
-      <li>Pen</li>
-      <li>Pencil</li>
-      <li>Ereaser</li>
-      <li>Sharpener</li>
+      <li>Frontend</li>
+      <li>Backend</li>
+      <li>Full Stack</li>
+    </ul>
+    <ul type="square">
+      <li>Frontend</li>
+      <li>Backend</li>
+      <li>Full Stack</li>
+    </ul>
+    <ul type="circle">
+      <li>Frontend</li>
+      <li>Backend</li>
+      <li>Full Stack</li>
+    </ul>
+    <ul type="none" title="last one">
+      <li>Frontend</li>
+      <li>Backend</li>
+      <li>Full Stack</li>
     </ul>
     <hr />
-    <h3>Tables</h3>
-    <!-- 03 TABLES -->
+    <h4>Tables</h4>
     <table border="1">
       <!-- Wrappes the table-->
       <tr>
@@ -77,28 +130,20 @@
         <th>No</th>
         <th>Name</th>
         <th>Surname</th>
-        <th>Contact Number</th>
+        <th>Tel</th>
       </tr>
       <tr>
         <td>1</td>
-        <td colspan="2">Alibek Nematov</td>
-        <!-- <td>Nematov</td> -->
-        <td rowspan="2">+998993540040</td>
-        <!-- collaps the border of row-->
+        <td colspan="2">Ali</td>
+        <!-- <td>Nemat</td> -->
+        <td rowspan="2">993540040</td>
       </tr>
       <tr>
         <td>2</td>
-        <td>Mirjalol</td>
-        <td>Qosimov</td>
-        <!-- <td>+998993541111</td> -->
-      </tr>
-      <tr>
-        <td>3</td>
-        <td colspan="2">Javohir</td>
-        <!-- <td>Qosimov</td> -->
-        <td>+998993541111</td>
+        <td>Vali</td>
+        <td>Ulug</td>
+        <!-- <td>983540040</td> -->
       </tr>
     </table>
-    <!-- Revised March 6, 2025 year  -->
   </body>
 </html>
