@@ -1,110 +1,196 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Fifth Lesson</title>
+    <title>Lesson 5</title>
   </head>
   <body>
-    <!-- FORM ELEMENTS -->
-    <!-- 01 FORM -->
-    <!-- FORM includes all form elements - father of the all form elements -->
-    <form action="#"> 
-      <!-- Input type TEXT -->
-      <label for="texting"> <mark>Inter your name here:</mark> </label>
-      <!-- Connects with input and has FOR attr.-->
+    <h1>Lesson 5: Form Elements</h1>
+    <hr />
+    <h3>Form Controls</h3>
+    <ul>
+      <li>Form</li>
+      <li>Label</li>
+      <li>Input</li>
+      <li>Button</li>
+      <li>Select</li>
+      <li>option</li>
+      <li>Textarea</li>
+    </ul>
+    <h4>Form Attributes</h4>
+    <ul>
+      <li>action</li>
+      <li>method</li>
+      <li>enctype</li>
+      <li>autocomplete</li>
+      <li>novalidate</li>
+    </ul>
+    <hr />
+    <h3>Label</h3>
+    <p>
+      The label element is used to define a label for an input element. It can
+      be associated with a specific input by using the for attribute, which
+      should match the id of the input.
+    </p>
+    <h4>Label Attributes</h4>
+    <ul>
+      <li>for</li>
+      <li>name</li>
+    </ul>
+    <hr />
+    <h3>Input</h3>
+    <p>
+      The input element is used to create various types of form controls, such
+      as text fields, checkboxes, radio buttons, and more. The type attribute
+      specifies the type of input control to display.
+    </p>
+    <h4>Input Attributes</h4>
+    <ul>
+      <li>type</li>
+      <li>name</li>
+      <li>value</li>
+      <li>placeholder</li>
+      <li>required</li>
+      <li>readonly</li>
+      <li>disabled</li>
+    </ul>
+    <h4>Input types</h4>
+    <ul>
+      <li>text</li>
+      <li>password</li>
+      <li>email</li>
+      <li>number</li>
+      <li>checkbox</li>
+      <li>radio</li>
+      <li>file</li>
+      <li>date</li>
+      <li>color</li>
+      <li>submit</li>
+      <!--Works like a button   -->
+    </ul>
+    <hr />
+    <h3>Button</h3>
+    <p>
+      The button element is used to create a clickable button. It can be used to
+      submit a form or perform other actions
+    </p>
+    <h4>Button Attributes</h4>
+    <h5>Button specific attributes</h5>
+    <ul>
+      <li>type</li>
+      <li>name</li>
+      <li>value</li>
+      <li>disabled</li>
+      <li>hidden</li>
+    </ul>
+    <h5>Global attributes</h5>
+    <ul>
+      <li>id</li>
+      <li>class</li>
+      <li>style</li>
+      <li>title</li>
+      <li>tabindex</li>
+    </ul>
+    <h4>Button Types</h4>
+    <ul>
+      <li>submit</li>
+      <li>reset</li>
+      <li>button</li>
+    </ul>
+    <hr />
+    <h3>Select</h3>
+    <p>
+      The select element is used to create a drop-down list. It contains option
+      elements that define the available choices.
+    </p>
+    <h4>Select Attributes</h4>
+    <ul>
+      <li>name</li>
+      <li>multiple</li>
+      <li>size</li>
+      <li>disabled</li>
+    </ul>
+    <hr />
+    <h3>Textarea</h3>
+    <p>The textarea element is used to create a multi-line text input field.</p>
+    <h4>Textarea Attributes</h4>
+    <ul>
+      <li>name</li>
+      <li>rows</li>
+      <li>cols</li>
+      <li>maxlength</li>
+      <li>placeholder</li>
+      <li>required</li>
+      <li>readonly</li>
+      <li>disabled</li>
+    </ul>
+    <hr />
+    <h2>Practice</h2>
+    <from>
+      <label for="name" name="name">Name:</label>
+      <input type="text" id="name" placeholder="Your name" name="name" />
+      <br />
+      <br />
+      <label for="surname" name="surname">Surname:</label>
       <input
         type="text"
-        placeholder="Name"
-        id="texting"
-        required
-        minlength="3"
-        maxlength="24"
+        id="surname"
+        placeholder="Your surname"
+        name="surname"
       />
-      <!--required - requires filling the input-->
-      <!-- Connects with Label by ID -->
-      <br /><br />
-      <!--Input type NUMBER -->
-      <label for="number"> <i> Inter the number that you like:</i></label>
+      <br />
+      <br />
+      <label for="email" name="name">Email:</label>
+      <input type="email" id="email" placeholder="Your email" name="email" />
+      <br />
+      <br />
+      <label for="password" name="password">Password:</label>
       <input
-        type="number"
-        id="number"
-        placeholder="Any number from -1000 to 1000"
-        step="10"
-        max="1000"
-        min="-1000"
+        type="password"
+        id="password"
+        placeholder="Your password"
+        name="password"
       />
       <br /><br />
-      <!-- Input type TEL -->
-      <label for="tel"><b>Inter your phone number:</b></label>
-      <input
-        type="tel"
-        id="tel"
-        placeholder="+9980000000"
-        value="+998"
-        pattern="[0-9]{11}"
-        maxlength="11"
-      />
+      <label for="gender" name="gender">Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" />
+      <input type="radio" id="female" name="gender" value="female" />
       <br /><br />
-      <!-- Input type PASSWORD -->
-      <label for="pass"><strong>Inter your password:</strong></label>
-      <input type="password" id="pass" placeholder="Password" />
+      <p>Subscribe to newsletter:</p>
+      <label for="checkbox" name="checkbox">BBC</label>
+      <input type="checkbox" id="checkbox" name="checkbox" />
+      <label for="checkbox" name="checkbox">CNN</label>
+      <input type="checkbox" id="checkbox" name="checkbox" />
+      <label for="checkbox" name="checkbox">Al Jazeera</label>
+      <input type="checkbox" id="checkbox" name="checkbox" />
       <br /><br />
-      <!-- Input type EMAIL -->
-      <label for="email"><em>Inter your email address:</em></label>
-      <input type="email" id="email" />
-      <br /><br />
-      <!-- Input type RADIO -->
-      <p>Are you married?</p>
-      <label for="yes">Yes</label>
-      <input type="radio" id="yes" name="marriage" />
-      <label for="no">No</label>
-      <input type="radio" id="no" name="marriage" />
-      <br /><br />
-      <!-- Input type CHECKBOX -->
-      <p><u>Choose your favorite subject</u></p>
-      <label for="it">IT</label>
-      <input type="checkbox" id="it" />
-      <br />
-      <label for="math">Mathematics</label>
-      <input type="checkbox" id="math" />
-      <br />
-      <label for="physics">Phisics</label>
-      <input type="checkbox" id="physics" />
-      <br />
-      <label for="eng">English</label>
-      <input type="checkbox" id="eng" />
-      <br /><br />
-
-      <!-- Input type FILE -->
-      <label for="file">Upload your avatar photo</label>
-      <input type="file" accept="image/*" />
-      <br /><br />
-
-      <!-- Input type TEXTAREA -->
-      <label for="offer">Inter your suggestion for support</label>
-      <textarea name="" id="offer" cols="30" rows="10"></textarea>
-      <br /><br />
-
-      <!-- SECTION -->
-      <label for="cars">Pick the car that you like best:</label>
-      <select id="cars" name="cars">
-        <!--multiple - shows all options to the client-->
-        <option value="audi">Audi</option>
-        <option value="ford">Ford</option>
-        <option value="toyota">Toyota</option>
-        <option value="kia">Kia</option>
-        <optgroup label="GM">
-          <option value="nexia">Nexia</option>
-          <option value="tico">Tico</option>
-          <option value="damas">Damas</option>
+      <p>Choose an option:</p>
+      <select>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+        <optgroup label="Group 1">
+          <option value="option4">Option 4</option>
+          <option value="option5">Option 5</option>
         </optgroup>
       </select>
-
-      <!-- BUTTON -->
       <br /><br />
-      <button type="submit"><del>Submit</del></button>
-      <button type="reset">Clear</button>
-    </form>
+      <label for="message" name="message">Message:</label>
+      <textarea
+        name="message"
+        id="message"
+        placeholder="Enter your message here... "
+        rows="10"
+        cols="30"
+      >
+Your message goes here... </textarea
+      >
+      <br /><br />
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+      <button type="button">Click Me</button>
+      <input type="submit" value="Input Submit" />
+    </from>
   </body>
 </html>
