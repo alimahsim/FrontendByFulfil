@@ -1,47 +1,206 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Sixth Lesson</title>
   </head>
-  <body  style="height:2000px;">
-    
-    <!-- 01 AUDIO -->
-     <!-- Audio element is used for container and it has controls autoplay muted loop attributes. It is the even tag  -->
-    <audio controls autoplay muted loop> <>
-      <source src="Hold My Hand.mp3" type="audio/mp3"/> <!-- source is the odd tag and it has a TYPE attribute -->
-      <source src="Hold My Hand.wav" type="audio/wav"/>
-      <source src="Hold My Hand.ogg" type="audio/ogg"/>
+  <body>
+    <h1>Audio, video,iframe and layout & semantic elements</h1>
+    <h3>Audio</h3>
+    <p>
+      &lt;Audio&gt; element releases audio files onto websites and &lt;audio&gt;
+      element works as a container for &lt;source&gt; elements.
+    </p>
+    <h4>Audio attributes</h4>
+    <ul>
+      <span><u>Specific attributes</u></span>
+      <li>controls</li>
+      <li>autoplay</li>
+      <li>loop</li>
+      <li>muted</li>
+      <span><u>Global attributes</u></span>
+      <li>id</li>
+      <li>class</li>
+      <li>style</li>
+    </ul>
+    <p>HTML suppors waw, mp3 and ogg formats.</p>
+    <audio controls>
+      <!--autoplay, muted, loop -->
+      <source src="./Hold My Hand.mp3" type="audio/mp3" />
+      <source src="./Hold My Hand.ogg" type="audio/ogg" />
+      <source src="./Hold My Hand.wav" type="audio/wav" />
+      Your browser does not support these formats.
     </audio>
-    <br><br>
-
-    <!-- 02 VIDEO -->
-    <video controls width="400" > <!-- VIDEO element just works like audio element and it a few extra attributes like -->
-      <source src="Javascript_1_qism_JS_haqida_ma`lumot,_'var'_kalit_so`zi_.mp4">
+    <h3>Video</h3>
+    <h4>Video attribures</h4>
+    <ul>
+      <span><u>Specific attributes</u></span>
+      <li>controls</li>
+      <li>muted</li>
+      <li>autoplay</li>
+      <li>loop</li>
+      <li>width</li>
+      <li>height</li>
+      <span><u>Global attributes</u></span>
+      <li>id</li>
+      <li>class</li>
+      <li>style</li>
+    </ul>
+    <video controls width="500">
+      <source
+        src="./Javascript_1_qism_JS_haqida_ma`lumot,_'var'_kalit_so`zi_.mp4"
+        type="video/mp4"
+      />
+      <source
+        src="./Javascript_1_qism_JS_haqida_ma`lumot,_'var'_kalit_so`zi_.ogg"
+        type="video/ogg"
+      />
+      <source
+        src="./Javascript_1_qism_JS_haqida_ma`lumot,_'var'_kalit_so`zi_.webm"
+        type="video/webm"
+      />
+      Your browser does not support these formats.
     </video>
-    <br><br>
+    <h3>Iframe</h3>
+    <h4>Iframe attributes</h4>
+    <ul>
+      <span><u>Specific attributes</u></span>
+      <li>src</li>
+      <li>width</li>
+      <li>height</li>
+      <li>frameborder</li>
+      <li>name</li>
+      <span><u>Global attributes</u></span>
+      <li>id</li>
+      <li>class</li>
+      <li>style</li>
+    </ul>
+    <p>
+      iframe is used to embed another document within the current HTML document.
+      It allows you to display content from another source, such as a webpage or
+      a video, within a specified area of your webpage.
+    </p>
+    <h5>Global Paths</h5>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/-r_0t7Ux01M"
+      title="The Magic of Thinking Big | Jim Rohn Motivation"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+        web-share;
+      "
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23056.80919182374!2d65.7966159!3d38.81451920000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1787118749461!5m2!1sen!2s"
+      width="560"
+      height="315"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+    ></iframe>
 
-    <!-- 03 IFRAME -->
-    <!-- Local showing other websites -->
-    <iframe src="../01-Introduction(Course Plan)/index.html" width="400" height="300" frameborder="0"></iframe>
-    <iframe src="http:\\www.daryo.uz" width="400" height="300" frameborder="0"></iframe>
-    <iframe src="https:\\youtube.com" width="400" height="300" frameborder="0"></iframe>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93435.83887579049!2d-81.32828428566033!3d42.95994462640638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef203c9358f6d%3A0x6f658d87a560bca3!2sVictoria%20Park!5e0!3m2!1suz!2s!4v1724933317981!5m2!1suz!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <!-- 04 SEMANTIC ELEMENTS -->
-    <article>
-    <aside>
-    <details>
-    <figcaption>
-    <figure>
-    <footer>
-    <header>
-    <main>
-    <mark>
-    <nav>
-    <section>
-    <summary>
-    <time>
-      
+    <h5>Relative Paths</h5>
+    <iframe
+      src="../05-Form_elements/index.html"
+      width="560"
+      height="315"
+      frameborder="0"
+    >
+    </iframe>
+    <h3>Layout and Semantic Elements</h3>
+    <h4>Layout</h4>
+    <p>
+      Layout and semantic elements are HTML tags that provide structure and
+      meaning to the content of a webpage. They help organize the content in a
+      way that is both visually appealing and semantically meaningful.
+    </p>
+    <img src="layout.jpg" alt="Layout Example" width="560" />
+    <h4>Semantic Elements</h4>
+    <p>
+      Semantic elements are HTML tags that convey meaning about the content they
+      contain. They provide information about the role or purpose of the
+      content, making it easier for both developers and search engines to
+      understand the structure of a webpage.
+    </p>
+    <ul type="square">
+      <li>header</li>
+      <li>nav</li>
+      <li>main</li>
+      <li>section</li>
+      <li>aside</li>
+      <li>article</li>
+      <li>footer</li>
+    </ul>
+    <h5>Additional Information - Get and Post Methods</h5>
+    <p>
+      The GET and POST methods are two different ways to send data from a client
+      (usually a web browser) to a server when submitting a form or making an
+      HTTP request. They are part of the HTTP protocol and serve different
+      purposes.
+    </p>
+    <h6>
+      <h6>Get Method</h6>
+      mark>
+    </h6>
+    <p>Shows the path way of the request in the URL.</p>
+    <form action="" method="get">
+      <label for="name"
+        >Name:
+        <input type="text" id="name" name="name" placeholder="Your name" />
+      </label>
+      <br /><br />
+      <label for="email"
+        >Email:
+        <input type="email" id="email" name="email" placeholder="Your email" />
+      </label>
+      <br /><br />
+      <label for="password"
+        >Password:
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Your password"
+        />
+      </label>
+      <br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <h6><mark> Post Method </mark></h6>
+    <p>Does not show the path way of the request in the URL.</p>
+    <form action="" method="post">
+      <label for="name"
+        >Name:
+        <input type="text" id="name" name="name" placeholder="Your name" />
+      </label>
+      <br /><br />
+      <label for="email"
+        >Email:
+        <input type="email" id="email" name="email" placeholder="Your email" />
+      </label>
+      <br /><br />
+      <label for="password"
+        >Password:
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Your password"
+        />
+      </label>
+      <br /><br />
+      <input type="submit" value="Submit" />
+    </form>
   </body>
 </html>
