@@ -1,72 +1,59 @@
-/* h1{
-    color:blue
-} */
-
-/* Here 
-01 'h1' is selector (tanlovchi)
-02 'color' is property (xossa)
-03 'blue' is value (qiymat)*/
-
-/* Types of Selector */
-/* There are tag,class, attribute, id and universal */
-
-/* tag selector */
-h2{
-    color:red; 
+h5 {
+  color: brown;
 }
 
-/* Class selector */
-.headGreen{
-    color:chartreuse;
+/* h5 => selector */
+/* color => property */
+/* red => value */
+
+/* Each property has its specific value   */
+
+/* Selector types: tag, attributes, class, id, unversal  */
+
+/* Tag Selector */
+input {
+  background-color: blue;
 }
 
-/* Attribute selecor */
-/* If we select the 'input' it infulenes all tags so pick sepesific type of input */
-[type="text"]{
-    background-color:black;
-} 
+/* Attribute Selector */
+[type="text"] {
+  background-color: aquamarine;
+}
+/* Class Selector */
+.password {
+  background-color: blueviolet;
+}
+/* Id Selector */
+#tel {
+  background-color: coral;
+}
+/* Universal - * - Selector */
+* {
+  /* background-color: #f3c9c9; */
+  margin: 0;
+  /* padding: 0; */
+}
+/* Entire page dyed #f3c9c9 color*/
 
-[type="email"]{
-    background-color:darkblue;
-} 
-
-/* ID selector */
-#headID{
-    color:indigo;
+/* Cascading */
+/* Selecting by tag = 4*/
+h2 {
+  color: cadetblue !important;
 }
 
-/* Universal selector */
-/* Whole HTML file changes */
-/* 
-*{
-    background-color: dimgrey;
-} */
-
-/* Cascading  */
-/* 01 InlineCSS (but not the best practice) > 02 ID > 03 Class = 03 Attribute > 04 Tag  */
-/* 
-h1{
-    background-color:cadetblue;
-} */
-.headClass{
-    background-color: crimson;
+/* Selecting by attribute =3 */
+[title="H2Att"] {
+  color: chocolate;
 }
-#headID2{
-    background-color: yellow;
+
+/* Selecting by Class = 2*/
+.classH2 {
+  color: yellow;
 }
-/* h1{
-    background-color: #00FF44;
-} */
+/* Selecting by Id = 1*/
+#idH2 {
+  color: violet;
+}
+/* And there is an inline style css, it the most high in proriority */
 
-/* Priority: Inline CSS => ID => Class = Attribute => tag */
-
-/* !important */
-
-/* It gives more property than others  */
-
-/* h1{
-    background-color: sienna !important;
-} */
-
-/* 15.03.2025 revised  */
-
+/*Properties in order: TAG => ATTRIBUTE => CLASS => ID => INLINE CSS */

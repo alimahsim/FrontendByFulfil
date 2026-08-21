@@ -1,31 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS introdation</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Cascading Style Sheets</h1>
-    <h2>Hello world!</h2>
-    <h2>Hello world!</h2>
-    <h2 class="headGreen">Hello world!</h2>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>CSS</h1>
+    <h3>Connecting CSS</h3>
+    <p>There 3 ways to connect CSS to HMTL</p>
+    <h5>Inline CSS</h5>
+    <p>Coding inside HTML tags by using &lt;style&gt; attribute</p>
+    <h6 style="color: red">Hello world!</h6>
+    <h5>Internal CSS</h5>
+    <p>Coding inside &lt;style&gt; tag</p>
+    <style>
+      h1 {
+        color: orange;
+      }
+    </style>
+    <h5>External CSS</h5>
+    <p>
+      Opening a new seperate CSS file and connecting it to HTML by &lt;link&gt;
+      tag and &lt;rel&gt; and &lt;href&gt; attributes
+    </p>
+    <h6>Hi External CSS</h6>
+    <label for="name">Name:</label>
+    <input type="text" name="" id="name" placeholder="Your Name" />
+    <br /><br />
+    <label for="email">Email:</label>
+    <input type="email" name="" id="email" placeholder="Your Email" />
+    <br /><br />
+    <label for="password"
+      >Password:
+      <input type="password" class="password" placeholder="Your Password" />
+    </label>
+    <br /><br />
+    <label for="tel"
+      >Your Phone:
+      <input type="tel" id="tel" />
+    </label>
+    <h3>Comments</h3>
+    <p>Comments are created like: /* */ format in CSS</p>
 
-    <form action="#">
-        <label for="">Ismingiz:</label>
-        <input type="text" placeholder="Alibek">
-        <br><br>
-        <label for="">Emailingiz:</label>
-        <input type="email" placeholder="alimahsim@gmail.com"> 
-    </form>
-
-    <h2 id="headID">Hello world!</h2>
-
-    <h1>Selected by Tag</h1>
-    <h1 class="headClass">Selected by Class</h1>
-    <h1 id="headID2">Selected by ID</h1>
-
-
-</body>
+    <h3>Specificity</h3>
+    <h4>Cascading</h4>
+    <p>
+      Cascading is for an HTMl element giving many CSS commands and only one
+      applies and this is called "Cascading"
+    </p>
+    <h2>Hello World for Cascading1</h2>
+    <h2 title="H2Att">Hello World for Cascading2</h2>
+    <h2 class="classH2">Hello World for Cascading3</h2>
+    <h2 id="idH2">Hello World for Cascading4</h2>
+    <h2 style="color: tomato">Hello World for Cascading5</h2>
+    <h3>!Important</h3>
+    <p>It is used for to do the element most important</p>
+    <p>
+      All h2s will be dyed cadetblue if we put !important command to coloring
+      while selecting
+    </p>
+  </body>
 </html>
