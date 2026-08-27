@@ -1,0 +1,54 @@
+.boxes {
+  width: 300px;
+  height: 200px;
+  color: aliceblue;
+}
+.box1 {
+  background-color: saddlebrown;
+
+  /* Padding */
+  padding-left: 10px; /*10px from left */
+  padding-top: 20px; /*20px from top*/
+  padding-left: 25px; /*25px from left*/
+  padding-bottom: 30px; /*30px from bottom*/
+
+  padding: 20px 40px; /* 20px from top & bottom and 40px from left & right*/
+
+  padding: 10px; /*10px from all sides. Shorthand for all side a single value*/
+  padding: 10px 20px 30px 40px; /* from top-right-bottom-left. Shorthand for all side seperate value/*/
+
+  /* Margin */
+  margin: 15px; /* margin works like padding*/
+
+  /* Border */
+  border-width: 4px;
+  border-style: dashed;
+  border-color: blue;
+
+  border: 5px solid red; /*Shorthand for all commads*/
+
+  border-top: 5px solid yellow;
+  border-right: 10px dashed green;
+  border-bottom: 3px dotted red;
+  border-bottom: 6px double fuchsia;
+
+  /* border: solid red 10px; */
+  /* Works in disorder too */
+}
+.box2 {
+  background-color: cadetblue;
+  padding: 1rem;
+}
+
+/* Min-Width, Min-height */
+/* Max-Width , Max-height */
+
+.box3 {
+  background-color: gold;
+  max-width: 300px;
+  /* max-height: 200px; */
+  padding: 1rem;
+}
+.image img {
+  max-width: 400px;
+}
